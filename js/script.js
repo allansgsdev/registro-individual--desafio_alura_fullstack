@@ -20,7 +20,7 @@ function capturarValores() {
     if (!campoNome || campoNome.trim() === '') {
         alert('Insira um nome válido.');
     } else {
-        if (!isNaN(campoIdade) && campoIdade > 1) {
+        if (!isNaN(campoIdade) && campoIdade >= 1) {
             mostrarInfos.innerHTML = `Nome: ${campoNome}<br>Idade: ${campoIdade} ${palavraIdade}`;
             document.getElementById('Nome').value = '';
             document.getElementById('Idade').value = '';
