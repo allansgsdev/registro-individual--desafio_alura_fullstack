@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Registro Individual</title>
+</head>
+
+<body>
+    <main class="conteudo-principal">
+        <section class="adicionar-produto">
+            <h1 class="titulo">
+                Registro <span class="texto-azul">Individual</span>
+            </h1>
+
+            <section class="campo-grupo">
+                <div class="divisoria"></div>
+                <section class="parte-inferior">
+                    <label class="campo-grupo">
+                            <span id="Mostrar-Nome" class="texto-final-azul">Seu nome e idade aparecerão aqui.</span>
+                    </label>
+                </section>
+                <div class="divisoria"></div>
+                    
+                <br>
+
+                <form id="regsitro" class="formulario">
+                    <label class="campo-grupo" for="campoNome">
+                        <span class="texto-medio-azul">Nome</span>
+                        <input class="nome-input" type="text" id="Nome" name="nome" placeholder="Digite o seu nome">
+                    </label>
+    
+    
+                    <label class="campo-grupo" for="campoIdade">
+                        <span class="texto-medio-azul">Idade</span>
+                        <input class="idade-input" type="number" id="Idade" name="idade" placeholder="10" min="1">
+                    </label>
+    
+                    <br>
+
+                    <section class="botoes-wrapper">
+                        <button type="button" class="botao-form botao-enviar"
+                            onclick="capturarValores()">Enviar</button>
+                    </section>
+                </form>
+            </section>
+            
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
